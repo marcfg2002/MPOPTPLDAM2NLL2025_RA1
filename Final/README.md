@@ -1,88 +1,88 @@
-Práctica final: Mini-CRM de eventos (con CSV, clases y datetime)
 
-Objetivo
+# 🚀 Práctica Final: Mini-CRM de Eventos
+### Gestión completa con CSV, Clases y Datetime
 
-Desarrollar una aplicación de consola en Python que gestione clientes, eventos y ventas a partir de ficheros CSV. La app debe:
+---
 
-    -Incluir un menú de ejecución en bucle.
-    -Leer y escribir CSV (módulo csv).
-    -Usar tipos de datos básicos (str, int, float, bool) y colecciones (list, dict, set, tuple).
-    -Definir al menos una clase propia (recomendadas: Cliente, Evento, Venta).
-    -Utilizar datetime para parsear fechas y calcular rangos/diferencias.
+## 🎯 Objetivo del Proyecto
 
-Requisitos funcionales mínimos    
+Desarrollar una **aplicación de consola en Python** que gestione clientes, eventos y ventas a partir de **ficheros CSV**. La app debe:
 
-    1. Menú con opciones: cargar CSV, listar tablas, alta de cliente, filtro de ventas por rango de fechas, métricas, exportar informe, salir.
-    
-    2.CSV: clientes.csv, eventos.csv, ventas.csv (ver formato en starter).
+* Incluir un **menú de ejecución en bucle**.
+* Leer y escribir **CSV** (módulo `csv`).
+* Usar **tipos de datos básicos** (`str`, `int`, `float`, `bool`) y **colecciones** (`list`, `dict`, `set`, `tuple`).
+* Definir al menos **una clase propia** (recomendadas: `Cliente`, `Evento`, `Venta`).
+* Utilizar **datetime** para parsear fechas y calcular rangos/diferencias.
 
-    3. POO: implementar clases y métodos de utilidad (p. ej., dias_hasta_evento()).
+---
 
-    4. Fechas: parsear fechas con datetime.strptime, calcular diferencias con date.today().
+## 📋 Requisitos Funcionales Mínimos
 
-    5. Colecciones: listas para tablas, diccionarios índice por id, set de categorías, tuplas para devolver resúmenes.
+| No. | Requisito | Descripción |
+| :---: | :--- | :--- |
+| **1.** | **Menú Principal** | Opciones: cargar CSV, listar tablas, alta de cliente, filtro de ventas por rango de fechas, métricas, exportar informe, salir. |
+| **2.** | **Archivos CSV** | `clientes.csv`, `eventos.csv`, `ventas.csv` (ver formato en *starter*). |
+| **3.** | **POO** | Implementar clases y métodos de utilidad (p. ej., `dias_hasta_evento()`). |
+| **4.** | **Fechas** | Parsear fechas con `datetime.strptime`, calcular diferencias con `date.today()`. |
+| **5.** | **Colecciones** | **Listas** para tablas, **diccionarios** índice por ID, **set** de categorías, **tuplas** para devolver resúmenes. |
+| **6.** | **Gestión de Archivos** | Lectura robusta, guardado incremental y exportación de informe CSV. |
 
-    6. Gestión de archivos: lectura robusta, guardado incremental y exportación de informe CSV.
+---
 
+## ✅ Tareas Pendientes (`TODO`)
 
-TODO
+### Mínimos (Obligatorios)
 
-Mínimos (obligatorios)
+* [ ] Implementar **`cargar_datos()`** para leer `clientes.csv`, `eventos.csv`, `ventas.csv`.
+* [ ] Completar **`listar(tabla)`** con salidas formateadas.
+* [ ] **`alta_cliente()`**: pedir datos por `input`, validar fecha (`YYYY-MM-DD`), actualizar colecciones y **guardar incrementalmente** `data/clientes.csv`.
+* [ ] **`filtrar_ventas_por_rango()`**: leer dos fechas, validar, devolver/imprimir ventas entre el rango.
+* [ ] **`estadisticas()`**:
+    * [ ] Ingresos totales
+    * [ ] Ingresos por evento (`dict`)
+    * [ ] `set` de categorías existentes
+    * [ ] Días hasta el evento más próximo
+    * [ ] `tupla` (`min`, `max`, `media`) de precios
+* [ ] **`exportar_informe()`**: crear `data/informe_resumen.csv` con totales por evento.
 
-    -[ ] Implementar cargar_datos() para leer clientes.csv, eventos.csv, ventas.csv.
-    -[ ] Completar listar(tabla) con salidas formateadas.
-    -[ ] alta_cliente(): pedir datos por input, validar fecha (YYYY-MM-DD), actualizar colecciones y guardar incrementalmente data/clientes.csv.
-    -[ ] filtrar_ventas_por_rango(): leer dos fechas, validar, devolver/imprimir ventas entre el rango.
-    -[ ] estadisticas():
-    -[ ] ingresos totales
-    -[ ] ingresos por evento (dict)
-    -[ ] set de categorías existentes
-    -[ ] días hasta el evento más próximo
-    -[ ] tupla (min, max, media) de precios
-    -[ ] exportar_informe(): crear data/informe_resumen.csv con totales por evento.
+### Clases (Añadir Métodos)
 
+* [ ] `Cliente.antiguedad_dias()` -> `int`
+* [ ] `Evento.dias_hasta_evento()` -> `int`
+* [ ] `__str__`/`__repr__` en las clases para salidas legibles
 
-Clases (añadir métodos)
+### Validaciones
 
-    -[ ] Cliente.antiguedad_dias() -> int
-    -[ ] Evento.dias_hasta_evento() -> int
-    -[ ] __str__/__repr__ en las clases para salidas legibles
+* [ ] Manejo de `FileNotFoundError` en lectura.
+* [ ] Validación simple de *email*.
+* [ ] Evitar colisión de IDs (o generarlos automáticamente).
 
+---
 
-Validaciones
+## 📦 Entregables
 
-    -[ ] Manejo de FileNotFoundError en lectura.
-    -[ ] Validación simple de email.
-    -[ ] Evitar colisión de IDs (o generarlos automáticamente).
+1.  **Código fuente** (*starter* adaptado).
+2.  Carpeta `data/` con **CSV de prueba**.
+3.  **`informe_resumen.csv`** generado.
 
+---
 
-Entregables
+## 📊 Evaluación (Orientativa)
 
-    -Código fuente (starter adaptado).
-    -Carpeta data/ con CSV de prueba.
-    -informe_resumen.csv generado.
+| Criterio | Peso |
+| :--- | :---: |
+| **Menú / UX** | **15 %** |
+| **Lectura/escritura CSV** | **20 %** |
+| **Programación Orientada a Objetos (POO)** | **20 %** |
+| **Uso de `datetime`** | **15 %** |
+| **Colecciones y métricas** | **15 %** |
+| **Calidad del código** | **15 %** |
 
+---
 
-Evaluación (orientativa)
+## ✨ Sugerencias
 
-Criterio----------------------------------------Peso
-
-Menú / UX------------------------------------15 %
-
-Lectura/escritura CSV------------------------20 %
-
-Programación orientada a objetos (POO)---20 %
-
-Uso de datetime------------------------------15 %
-
-Colecciones y métricas-----------------------15 %
-
-Calidad del código---------------------------15 %
-
-
-Sugerencias
-
-    -Implementa primero el menú y la carga de datos.
-    -Aísla la E/S CSV en funciones.
-    -Documenta con comentarios breves y nombres claros.
-    -Opcional (para subir nota): modulariza y añade tests con pytest.
+* Implementa primero el **menú** y la **carga de datos**.
+* **Aísla la E/S CSV** en funciones.
+* **Documenta** con comentarios breves y nombres claros.
+* *Opcional (para subir nota):* Modulariza y añade *tests* con `pytest`.
