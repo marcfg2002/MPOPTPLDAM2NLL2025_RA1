@@ -65,19 +65,19 @@ Entregables
 
 Evaluación (orientativa)
 
-Criterio--------------------------------Peso
+Criterio----------------------------------------Peso
 
-Menú / UX-------------------------------15 %
+Menú / UX------------------------------------15 %
 
-Lectura/escritura CSV-------------------20 %
+Lectura/escritura CSV------------------------20 %
 
-Programación orientada a objetos (POO)--20 %
+Programación orientada a objetos (POO)---20 %
 
-Uso de datetime-------------------------15 %
+Uso de datetime------------------------------15 %
 
-Colecciones y métricas------------------15 %
+Colecciones y métricas-----------------------15 %
 
-Calidad del código----------------------15 %
+Calidad del código---------------------------15 %
 
 
 Sugerencias
