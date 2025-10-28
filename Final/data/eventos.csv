@@ -1,0 +1,6 @@
+id_evento;nombre;fecha_evento;precio;categoria
+101;Concierto Rock;2024-12-20;75.50;Musica
+102;Obra de Teatro;2024-11-15;40.00;Teatro
+103;Conferencia Tech;2025-01-30;150.00;Conferencia
+104;Taller de Cocina;2024-11-05;60.00;Taller
+105;Concierto Jazz;2025-02-25;55.00;Musica

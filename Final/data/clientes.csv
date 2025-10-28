@@ -1,0 +1,5 @@
+id_cliente;nombre;email;fecha_registro
+1;Ana Torres;ana.torres@example.com;2022-01-15
+2;Bruno Costa;bruno.costa@example.com;2022-03-22
+3;Carla Diaz;carla.diaz@example.com;2023-07-30
+4;David Gil;david.gil@example.com;2023-11-05
