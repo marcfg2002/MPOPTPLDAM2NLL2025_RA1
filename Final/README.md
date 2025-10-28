@@ -8,9 +8,10 @@ Desarrollar una aplicación de consola en Python que gestione clientes, eventos 
     -Definir al menos una clase propia (recomendadas: Cliente, Evento, Venta).
     -Utilizar datetime para parsear fechas y calcular rangos/diferencias.
 
-Requisitos funcionales mínimos
-    1. Menú con opciones: cargar CSV, listar tablas, alta de cliente, filtro de ventas por rango de fechas, métricas, exportar informe, salir.
+Requisitos funcionales mínimos    
 
+    1. Menú con opciones: cargar CSV, listar tablas, alta de cliente, filtro de ventas por rango de fechas, métricas, exportar informe, salir.
+    
     2.CSV: clientes.csv, eventos.csv, ventas.csv (ver formato en starter).
 
     3. POO: implementar clases y métodos de utilidad (p. ej., dias_hasta_evento()).
